@@ -13,41 +13,41 @@ export default function Navbar() {
                 </div>
                 <div className='py-[5px] hidden md:block'>
                     <ul className=' flex flex-row font-semibold'>
-                        <li className=' px-4 hover:bg-blue-800 rounded-3xl py-1 hover:text-white duration-75 cursor-pointer '>Individual</li>
-                        <li className=' px-4 hover:bg-blue-800 rounded-3xl py-1 hover:text-white duration-75 cursor-pointer '>Teams</li>
-                        <li className=' px-4 hover:bg-blue-800 rounded-3xl py-1 hover:text-white duration-75  cursor-pointer'>Enterprise</li>
+                        <li className=' font-semibold px-4 hover:bg-blue-800 rounded-3xl py-1 hover:text-white duration-75 cursor-pointer '>Individual</li>
+                        <li className=' font-semibold px-4 hover:bg-blue-800 rounded-3xl py-1 hover:text-white duration-75 cursor-pointer '>Teams</li>
+                        <li className=' font-semibold px-4 hover:bg-blue-800 rounded-3xl py-1 hover:text-white duration-75  cursor-pointer'>Enterprise</li>
                         <li className='flex flex-row px-4 hover:bg-blue-800 rounded-3xl py-1 group hover:text-white duration-75 cursor-pointer '>
-                            <p>Product</p>
+                            <p className=' font-semibold'>Product</p>
                             <ChevronLeft fontSize='' className=' -rotate-90 mt-[6px] group-hover:rotate-90 duration-75' />
                         </li>
-                        <li className=' px-4 hover:bg-blue-800 rounded-3xl py-1 hover:text-white duration-75 cursor-pointer '>Pricing</li>
+                        <li className=' font-semibold px-4 hover:bg-blue-800 rounded-3xl py-1 hover:text-white duration-75 cursor-pointer '>Pricing</li>
                         <li className='flex flex-row px-4 group hover:bg-blue-800 rounded-3xl py-1 group hover:text-white duration-75 cursor-pointer '>
-                            <p>Resources</p>
+                            <p className=' font-semibold'>Resources</p>
                             <ChevronLeft fontSize='' className=' -rotate-90 mt-[6px] group-hover:rotate-90 duration-75 ' />
                         </li>
                     </ul>
                 </div>
                 <div className=' font-semibold flex flex-row'>
                     <p className='py-2 mx-3 cursor-pointer'>Login</p>
-                    <p className=' bg-blue-800 text-white py-2 px-5 rounded-3xl hover:bg-blue-600 cursor-pointer'>Get started</p>
+                    <p className=' bg-blue-800 text-white py-2 md:px-5 px-1 rounded-3xl hover:bg-blue-600 cursor-pointer'>Get started</p>
                     <p className='md:hidden' onClick={()=>{
                         setMenu(!menu)
                     }}><Menu fontSize='large' className={`m-1 `} /></p>
                 </div>
             </nav>
             {/* Mobile view */}
-            <div className={` w-1/2 h-screen absolute right-0 rounded-l-lg ${menu?" block":" hidden"} md:hidden`}>
+            <div className={` bg-white w-1/2 h-screen absolute right-0 rounded-l-lg ${menu?" block":" hidden"} md:hidden`}>
                 <ul className=' flex flex-col font-semibold pt-4'>
-                    <li className=' px-4 hover:bg-blue-800 rounded-3xl py-4 hover:text-white duration-75 cursor-pointer '>Individual</li>
-                    <li className=' px-4 hover:bg-blue-800 rounded-3xl py-4 hover:text-white duration-75 cursor-pointer '>Teams</li>
-                    <li className=' px-4 hover:bg-blue-800 rounded-3xl py-4 hover:text-white duration-75  cursor-pointer'>Enterprise</li>
+                    <li className=' font-semibold px-4 hover:bg-blue-800 rounded-3xl py-4 hover:text-white duration-75 cursor-pointer '>Individual</li>
+                    <li className=' font-semibold px-4 hover:bg-blue-800 rounded-3xl py-4 hover:text-white duration-75 cursor-pointer '>Teams</li>
+                    <li className=' font-semibold px-4 hover:bg-blue-800 rounded-3xl py-4 hover:text-white duration-75  cursor-pointer'>Enterprise</li>
                     <li className='flex flex-row px-4 hover:bg-blue-800 rounded-3xl py-4 group hover:text-white duration-75 cursor-pointer '>
-                        <p>Product</p>
+                        <p className=' font-semibold'>Product</p>
                         <ChevronLeft fontSize='' className=' -rotate-90 mt-[6px] group-hover:rotate-90 duration-75' />
                     </li>
-                    <li className=' px-4 hover:bg-blue-800 rounded-3xl py-4 hover:text-white duration-75 cursor-pointer '>Pricing</li>
+                    <li className=' font-semibold px-4 hover:bg-blue-800 rounded-3xl py-4 hover:text-white duration-75 cursor-pointer '>Pricing</li>
                     <li className='flex flex-row px-4 group hover:bg-blue-800 rounded-3xl py-4 group hover:text-white duration-75 cursor-pointer '>
-                        <p>Resources</p>
+                        <p className=' font-semibold'>Resources</p>
                         <ChevronLeft fontSize='' className=' -rotate-90 mt-[6px] group-hover:rotate-90 duration-75 ' />
                     </li>
                 </ul>
