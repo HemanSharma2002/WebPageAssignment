@@ -4,7 +4,7 @@ import { AdjustRounded, AutoGraphRounded, BarChartRounded, CoPresentRounded, Fla
 
 export default function () {
   return (
-    <div className=' h-full w-full my-3 '>
+    <div className=' h-full w-full my-3'>
         {/* Intro */}
         <div className=' flex flex-col py-4 items-center text-center px-2 md:px-10 bg-[url("C:\Projects\Frontend\Start\Assignment\src\assets\Untitled design.png")] '>
             <div className=' font-semibold text-blue-500 my-3'>
@@ -32,7 +32,7 @@ export default function () {
             <p  className=' text-blue-950 text-2xl font-semibold py-2'>Calendly can solve your specific pain points</p>
         </div>
         {/* cards */}
-        <div className='flex flex-wrap justify-center gap-3 md:px-32 px-2 '>
+        <div className='flex flex-wrap justify-center gap-3 md:px-28 px-2 '>
             <Card logo={<AdjustRounded/>} title={"Sales"} description={"Calendly can solve your specific pain points Spend more time selling, and less time on admin. Shorten your sales cycle by letting prospects schedule while they're in peak buying mode."}/>
              <Card logo={<GroupRounded/>} title={"Recruting"} description={"Simplify recruitment by smoothing every aspect of the interview scheduling process, including automated follow-ups."}/>
              <Card logo={<CoPresentRounded/>} title={"Education"} description={"Control your office hours, and empower students and parents to schedule appointments easily."}/>

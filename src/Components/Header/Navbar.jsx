@@ -1,4 +1,4 @@
-import { ArrowDownward, ChevronLeft, Menu } from '@mui/icons-material'
+import { ArrowDownward, Cancel, ChevronLeft, CloseRounded, Menu, X } from '@mui/icons-material'
 import React, { useState } from 'react'
 
 export default function Navbar() {
@@ -27,16 +27,19 @@ export default function Navbar() {
                         </li>
                     </ul>
                 </div>
-                <div className=' font-semibold flex flex-row'>
-                    <p className='py-2 mx-3 cursor-pointer'>Login</p>
-                    <p className=' bg-blue-800 text-white py-2 md:px-5 px-2 rounded-sm md:rounded-3xl hover:bg-blue-600 cursor-pointer w-32 text-center'>Get started</p>
-                    <p className='md:hidden' onClick={()=>{
+                <div className={` font-semibold flex flex-row `}>
+                    <p className='py-2 mx-3 cursor-pointer md:block hidden'>Login</p>
+                    <p className=' bg-blue-800 text-white py-2 md:px-5 px-2 rounded-sm md:rounded-3xl md:block hidden hover:bg-blue-600 cursor-pointer w-32 text-center'>Get started</p>
+                    <div className='md:hidden duration-300' onClick={() => {
                         setMenu(!menu)
-                    }}><Menu fontSize='large' className={`m-1 `} /></p>
+                    }}>
+                        <p className={`${menu?"hidden":"block"}`}><Menu fontSize='large' className={`m-1 `} /></p>
+                        <p className={`${!menu?"hidden":"block"}`}><CloseRounded fontSize='large' className={`m-1 `} /></p>
+                    </div>
                 </div>
             </nav>
             {/* Mobile view */}
-            <div className={` bg-white w-1/2 h-screen absolute right-0 rounded-l-lg ${menu?" block":" hidden"} md:hidden`}>
+            <div className={` bg-white w-full h-screen absolute right-0 rounded-l-lg ${menu?" block":" hidden"} md:hidden z-10 fixed top-14 duration-300`}>
                 <ul className=' flex flex-col font-semibold pt-4'>
                     <li className=' font-semibold px-4 hover:bg-blue-800 rounded-3xl py-4 hover:text-white duration-75 cursor-pointer '>Individual</li>
                     <li className=' font-semibold px-4 hover:bg-blue-800 rounded-3xl py-4 hover:text-white duration-75 cursor-pointer '>Teams</li>
@@ -51,6 +54,10 @@ export default function Navbar() {
                         <ChevronLeft fontSize='' className=' -rotate-90 mt-[6px] group-hover:rotate-90 duration-75 ' />
                     </li>
                 </ul>
+                <div className=' font-semibold flex flex-col items-center'>
+                    <p className='py-2 mx-3 cursor-pointer'>Login</p>
+                    <p className=' bg-blue-800 text-white py-2 md:px-5 px-2 rounded-sm md:rounded-3xl hover:bg-blue-600 cursor-pointer w-32 text-center'>Get started</p>
+                </div>
             </div>
         </div>
     )
