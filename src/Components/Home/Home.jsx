@@ -6,7 +6,10 @@ export default function () {
   return (
     <div className=' h-full w-full my-3'>
         {/* Intro */}
-        <div className=' flex flex-col py-4 items-center text-center px-2 md:px-10 bg-[url("C:\Projects\Frontend\Start\Assignment\src\assets\Untitled design.png")] '>
+        <div className=' w-full md:h-80 h-[400px] object object-fills absolute -z-10'>
+            <img className=' h-full w-full' src="https://i.ibb.co/XsxvTN8/Untitled-design-2.png" alt="" />
+        </div>
+        <div className=' flex flex-col py-4 items-center text-center px-2 md:px-10  '>
             <div className=' font-bold text-blue-500 my-3'>
                 SOLUTIONS
               </div>
@@ -26,6 +29,7 @@ export default function () {
                   <button className='bg-blue-800 text-white px-4 py-2 rounded-3xl my-3 hover:bg-blue-600'>Contact sales</button>
             </div>
         </div>
+        
         
         <div className='text-center py-2'>
             <p className=' text-blue-500 font-bold p'>SOLUTIONS</p>
