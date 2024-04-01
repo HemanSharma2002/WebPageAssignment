@@ -29,7 +29,7 @@ export default function Navbar() {
                 </div>
                 <div className=' font-semibold flex flex-row'>
                     <p className='py-2 mx-3 cursor-pointer'>Login</p>
-                    <p className=' bg-blue-800 text-white py-2 md:px-5 px-2 rounded-sm md:rounded-3xl hover:bg-blue-600 cursor-pointer'>Get started</p>
+                    <p className=' bg-blue-800 text-white py-2 md:px-5 px-2 rounded-sm md:rounded-3xl hover:bg-blue-600 cursor-pointer w-32 text-center'>Get started</p>
                     <p className='md:hidden' onClick={()=>{
                         setMenu(!menu)
                     }}><Menu fontSize='large' className={`m-1 `} /></p>
