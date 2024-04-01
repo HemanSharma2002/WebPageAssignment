@@ -7,7 +7,7 @@ export default function () {
     <div className=' h-full w-full my-3'>
         {/* Intro */}
         <div className=' flex flex-col py-4 items-center text-center px-2 md:px-10 bg-[url("C:\Projects\Frontend\Start\Assignment\src\assets\Untitled design.png")] '>
-            <div className=' font-semibold text-blue-500 my-3'>
+            <div className=' font-bold text-blue-500 my-3'>
                 SOLUTIONS
               </div>
               <div>
@@ -28,8 +28,8 @@ export default function () {
         </div>
         
         <div className='text-center py-2'>
-            <p className=' text-blue-500 font-semibold p'>SOLUTIONS</p>
-            <p  className=' text-blue-950 text-2xl font-semibold py-2'>Calendly can solve your specific pain points</p>
+            <p className=' text-blue-500 font-bold p'>SOLUTIONS</p>
+            <p  className=' text-blue-950 text-2xl font-bold py-2'>Calendly can solve your specific pain points</p>
         </div>
         {/* cards */}
         <div className='flex flex-wrap justify-center gap-3 md:px-28 px-2 '>
