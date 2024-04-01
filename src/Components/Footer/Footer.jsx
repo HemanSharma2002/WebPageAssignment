@@ -28,11 +28,11 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className='flex flex-row my-5'>
-                        <p className=' md:mr-8 md:mx-0 mx-8 cursor-pointer'><Twitter /></p>
-                        <p className=' mx-8 cursor-pointer'><Facebook /></p>
-                        <p className=' mx-8 cursor-pointer'><Instagram /></p>
-                        <p className=' mx-8 cursor-pointer'><LinkedIn /></p>
-                        <p className=' mx-8 cursor-pointer'><YouTube /></p>
+                        <p className='mx-4 md:mr-8 cursor-pointer'><Twitter /></p>
+                        <p className='mx-4 md:mx-8 cursor-pointer'><Facebook /></p>
+                        <p className='mx-4 md:mx-8 cursor-pointer'><Instagram /></p>
+                        <p className='mx-4 md:mx-8 cursor-pointer'><LinkedIn /></p>
+                        <p className='mx-4 md:mx-8 cursor-pointer'><YouTube /></p>
                     </div>
 
                 </div>
