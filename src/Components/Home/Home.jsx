@@ -6,28 +6,31 @@ export default function () {
   return (
     <div className=' h-full w-full my-3'>
         {/* Intro */}
-        <div className=' w-full md:h-80 h-[400px] object object-fills absolute -z-10'>
-            <img className=' h-full w-full' src="https://i.ibb.co/XsxvTN8/Untitled-design-2.png" alt="" />
-        </div>
-        <div className=' flex flex-col py-4 items-center text-center px-2 md:px-10  '>
-            <div className=' font-bold text-blue-500 my-3'>
-                SOLUTIONS
-              </div>
-              <div>
-                  <div className=' flex md:flex-row flex-col text-6xl font-bold my-3 '>
-                      <p className='px-2 text-blue-800'>Calendly </p>
-                      <p className=' text-blue-950'>for the work you do</p>
+        
+          <div className=' relative'>
+              <div className=' flex flex-col py-4 items-center text-center px-2 md:px-10  '>
+                  <div className=' font-bold text-blue-500 my-3'>
+                      SOLUTIONS
                   </div>
-                  <div className=' text-gray-700 my-5 text-xl'>
-                      <p>Across a range of uses, Calendly helps people and teams build</p>
-                      <p>
-                          efficiency,professionalism, and results into the work they do
-                      </p>
+                  <div>
+                      <div className=' flex md:flex-row flex-col text-6xl font-bold my-3 '>
+                          <p className='px-2 text-blue-800'>Calendly </p>
+                          <p className=' text-blue-950'>for the work you do</p>
+                      </div>
+                      <div className=' text-gray-700 my-5 text-xl'>
+                          <p>Across a range of uses, Calendly helps people and teams build</p>
+                          <p>
+                              efficiency,professionalism, and results into the work they do
+                          </p>
+                      </div>
+                  </div>
+                  <div >
+                      <button className='bg-blue-800 text-white px-4 py-2 rounded-3xl my-3 hover:bg-blue-600'>Contact sales</button>
                   </div>
               </div>
-              <div >
-                  <button className='bg-blue-800 text-white px-4 py-2 rounded-3xl my-3 hover:bg-blue-600'>Contact sales</button>
-            </div>
+              <div className=' w-full md:h-full h-96 bottom-0 object md:object-fills object-contain absolute -z-10'>
+                  <img className=' h-full w-full' src="https://i.ibb.co/YXvgvMT/Untitled-design-3.png" alt="" />
+              </div>
         </div>
         
         
