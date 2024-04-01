@@ -1,10 +1,10 @@
-import { Facebook, Instagram, LinkedIn, Twitter, YouTube } from '@mui/icons-material'
+import { ChevronLeft, Facebook, Instagram, LinkedIn, Twitter, YouTube } from '@mui/icons-material'
 import React from 'react'
 
 export default function Footer() {
     return (
         <div>
-            <div className='md:px-10 px-4 flex flex-wrap justify-between'>
+            <div className='md:px-10 px-2 flex flex-wrap justify-between'>
                 {/* first part */}
                 <div className='  w-[450px] flex flex-col items-start'>
                     <div className=' my-5'>
@@ -16,8 +16,9 @@ export default function Footer() {
                             We take the work out of connecting with others so you can accomplish more.
                         </p>
                     </div>
-                    <div className=' my-5'>
-                        English
+                    <div className=' my-5 w-full flex flex-row justify-between border-gray-400 border-2 rounded-lg p-2'>
+                        <p>English</p>
+                        <ChevronLeft className='-rotate-90'/>
                     </div>
                     <div className=' flex flex-row my-5'>
                         <div className=' w-40 '>
@@ -100,7 +101,7 @@ export default function Footer() {
                 </div>
             </div>
             
-            <div className=' flex flex-row justify-between md:px-10 px-2 py-2'>
+            <div className=' flex flex-row justify-between md:px-10 px-1 py-2'>
                 <div className=' text-gray-700'>
                     <p>Copyrights Calendy 2022</p>
                 </div>
